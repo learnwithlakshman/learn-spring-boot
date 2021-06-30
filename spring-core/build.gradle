@@ -1,0 +1,12 @@
+plugins {
+    id 'io.spring.dependency-management' version "${springDepMgmtVersion}"
+}
+
+
+dependencies {
+  implementation project(':common')
+}
+
+dependencyManagement {
+    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
+}
