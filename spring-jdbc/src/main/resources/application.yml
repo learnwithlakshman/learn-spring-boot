@@ -1,0 +1,22 @@
+spring:
+  datasource:
+     url: jdbc:postgresql://localhost:5432/lwl
+     username: dbuser
+     password: dbuser@123
+     
+tenantdetails:
+   tenantGroups:
+      - name: Group-1
+        tenants:
+          - name: Tenant-1
+            email: tenant1@gmail.com
+          - name: Tenant-2
+            email: tenant2@gmail.com
+      - name: Group-2
+        tenants:
+          - name: Tenant-g21
+            email: tenant21@gmail.com
+          - name: Tenant-22
+            email: tenant22@gmail.com   
+          - name: Tenant-23
+            email: tenant23@gmail.com   
