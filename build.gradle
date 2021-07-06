@@ -11,7 +11,7 @@ plugins {
 
 group = 'com.careerit'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 ext { springBootVersion = '2.4.5' }
 ext { springDepMgmtVersion = '1.0.11.RELEASE' }
@@ -28,7 +28,7 @@ subprojects {
     ext { springDepMgmtVersion = '1.0.11.RELEASE' }
     
     apply plugin: 'java'
-    sourceCompatibility = 1.8
+    sourceCompatibility = 11
     group = 'com.careerit'
     
     configurations {

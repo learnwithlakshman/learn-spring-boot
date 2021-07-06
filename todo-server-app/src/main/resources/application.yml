@@ -3,4 +3,6 @@ spring:
      url: jdbc:postgresql://localhost:5432/lwl
      username: dbuser
      password: dbuser@123
-  jpa:    hibernate:      ddl-auto: create    show-sql: true   
+     initialization-mode: always
+  jpa:    hibernate:      ddl-auto: none    show-sql: true   
+

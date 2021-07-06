@@ -8,7 +8,5 @@
  */
 
 rootProject.name = 'learn-spring-boot'
-include 'spring-core'
 include 'spring-jdbc'
-include 'common'
 include 'todo-server-app'
