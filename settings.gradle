@@ -10,3 +10,4 @@
 rootProject.name = 'learn-spring-boot'
 include 'spring-jdbc'
 include 'todo-server-app'
+include 'spring-jpa'

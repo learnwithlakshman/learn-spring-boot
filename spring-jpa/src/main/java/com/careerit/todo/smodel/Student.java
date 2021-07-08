@@ -30,6 +30,7 @@ public class Student {
 	private String qualification;
 	@OneToOne(mappedBy = "student")
 	private Address address;
+	
 	@ManyToMany(targetEntity = BatchDetails.class)
 	@JoinTable(name = "student_batch", joinColumns = @JoinColumn(name = "s_id"),inverseJoinColumns = @JoinColumn(name="b_id"))
 	private List<Batch> batches = new ArrayList<Batch>();

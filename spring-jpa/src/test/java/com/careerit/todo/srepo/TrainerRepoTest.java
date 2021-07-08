@@ -17,10 +17,11 @@ public class TrainerRepoTest {
 		@Test
 		public void trainerInfo() {
 			List<Trainer> list = trainerRepo.findAll();
+			
 			list.stream().forEach(t->{
 				System.out.println(t.getName()+" "+t.getEmail());
 			});
 			System.out.println("Total Trainer count :"+list.size());
-		
+			 
 		}
 }
