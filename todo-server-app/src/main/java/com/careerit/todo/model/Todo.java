@@ -22,6 +22,7 @@ public class Todo {
 		private String description;
 		private boolean status=true;
 		
+	
 		@ManyToOne
 		@JoinColumn(name = "user_id",referencedColumnName = "id")
 		private AppUser user;

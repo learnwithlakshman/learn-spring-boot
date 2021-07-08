@@ -3,7 +3,6 @@ package com.careerit.todo.service;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
@@ -11,7 +10,6 @@ import com.careerit.todo.dto.UserDTO;
 import com.careerit.todo.model.AppUser;
 import com.careerit.todo.repo.AppUserRepo;
 import com.careerit.todo.service.exception.UserAlreadyExistsException;
-import com.careerit.todo.util.AppConfigProperties;
 
 import lombok.extern.slf4j.Slf4j;
 
