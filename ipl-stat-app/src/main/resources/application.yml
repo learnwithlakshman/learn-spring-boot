@@ -1,0 +1,5 @@
+spring:
+ data:
+  mongodb:
+   uri: mongodb+srv://dbuser:dbuser@cluster0.qemcw.mongodb.net/iplstatdb?retryWrites=true&w=majority
+    batch:    job:      enabled: false
