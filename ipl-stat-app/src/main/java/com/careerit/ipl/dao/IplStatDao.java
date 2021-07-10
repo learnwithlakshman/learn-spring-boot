@@ -2,19 +2,19 @@ package com.careerit.ipl.dao;
 
 import java.util.List;
 
-import com.careerit.ipl.domain.Player;
+import com.careerit.ipl.dto.PlayerDTO;
 import com.careerit.ipl.dto.RoleAmountDTO;
-import com.careerit.ipl.dto.RoleCountDTO;
 import com.careerit.ipl.dto.TeamAmountDTO;
+import com.careerit.ipl.dto.TeamNamesDTO;
 
 public interface IplStatDao {
-	public List<String> findTeamNames();
+	public TeamNamesDTO findTeamNames();
 
-	public List<Player> findPlayesByTeam(String teamName);
+	public List<PlayerDTO> findPlayesByTeam(String teamName);
 
 	public List<RoleAmountDTO> findRoleAmountByTeam(String teamName);
 
-	public List<TeamAmountDTO> findAmountSpentByAllTeams();
+	public List<TeamAmountDTO> findAmountSpentByEachTeam();
 
-	public List<RoleCountDTO> findRoleCountByTeam(String teamName);
+	public List<PlayerDTO> findPlayersByTeamAndRole(String teamName,String role);
 }

@@ -6,9 +6,9 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Builder
 public class TeamAmountDTO {
 
 		private String teamName;
 		private double amount;
+		private int count;
 }

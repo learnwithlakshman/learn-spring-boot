@@ -3,3 +3,12 @@ spring:
   mongodb:
    uri: mongodb+srv://dbuser:dbuser@cluster0.qemcw.mongodb.net/iplstatdb?retryWrites=true&w=majority
     batch:    job:      enabled: false
+      
+server:  servlet:    context-path: /iplstat
+    
+app:
+ info: 
+  desc: 
+     Spring Boot with MongoDB and Rest API application
+  version: 
+     1.0.0

@@ -12,4 +12,5 @@ public class PlayerDTO {
 	private String country;
 	private String team;
 	private double price;
+	
 }

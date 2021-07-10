@@ -13,4 +13,5 @@ public class RoleAmountDTO {
 
 	private Role role;
 	private double amount;
+	private int count;
 }
