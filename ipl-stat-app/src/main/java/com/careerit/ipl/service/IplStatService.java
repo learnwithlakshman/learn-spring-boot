@@ -14,4 +14,5 @@ public interface IplStatService {
 		public List<RoleAmountDTO> roleAmountByTeam(String teamName);
 		public List<TeamAmountDTO> amountSpentByEachTeam();
 		public List<PlayerDTO> playersByTeamAndRole(String teamName,String role);
+		
 }

@@ -31,6 +31,12 @@ public class IplStatController {
 			return iplStatService.playesByTeam(teamName);
 		}
 		
+		@GetMapping("/{teamName}/{role}")
+		public List<PlayerDTO> getPlayersByTeamAndRole(@PathVariable("teamName")String teamName,@PathVariable("role")String role){
+			return iplStatService.playersByTeamAndRole(teamName,role);
+		}
+		
+		
 		@GetMapping("/roleamountandcount/{teamName}")
 		public List<RoleAmountDTO> getAmountAndRoleCount(@PathVariable("teamName")String teamName){
 			return iplStatService.roleAmountByTeam(teamName);
