@@ -76,8 +76,13 @@ public class IplStatDaoImpl implements IplStatDao {
 
 	@Override
 	public List<PlayerDTO> findPlayersByTeamAndRole(String teamName,String role) {
-		// TODO Auto-generated method stub
-		return null;
+		AggregationOperation match = Aggregation.match(Criteria.where("team").is(teamName).and("role").is(role));
+		AggregationOperation project = Aggregation.project().andExclude("_id");
+		Aggregation aggregation = Aggregation.newAggregation(match, project);
+		AggregationResults<PlayerDTO> result = mongoTemplate.aggregate(aggregation, "player", PlayerDTO.class);
+		List<PlayerDTO> list = result.getMappedResults();
+		log.info("The team and role {} has {} players", teamName, list.size());
+		return list;
 	}
 
 }

@@ -46,8 +46,7 @@ public class IplStatServiceImpl implements IplStatService {
 
 	@Override
 	public List<PlayerDTO> playersByTeamAndRole(String teamName,String role) {
-		// TODO Auto-generated method stub
-		return null;
+		return iplStatDao.findPlayersByTeamAndRole(teamName, role);
 	}
 
 	

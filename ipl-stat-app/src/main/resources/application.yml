@@ -1,7 +1,7 @@
 spring:
  data:
   mongodb:
-   uri: mongodb+srv://dbuser:dbuser@cluster0.qemcw.mongodb.net/iplstatdb?retryWrites=true&w=majority
+   uri: mongodb://localhost:27017/ipldata?readPreference=primary&appname=MongoDB%20Compass&ssl=false
     batch:    job:      enabled: false
       
 server:  servlet:    context-path: /iplstat
